@@ -1,11 +1,3 @@
-const express = require("express");
-const path = require("path");
-const app = express();
-const port = 8080;
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-const fs = require("fs");
-
 const $noteTitle = $(".note-title");
 const $noteText = $(".note-textarea");
 const $saveNoteBtn = $(".save-note");
@@ -157,17 +149,3 @@ $noteText.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the initial list of notes
 getAndRenderNotes();
-
-app.get("/notes", function(req, res) {
-  res.sendFile(path.join(__dirname, "view.html"));
-});
-
-app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "view.html"));
-});
-
-
-
-app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
-});
