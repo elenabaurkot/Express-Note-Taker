@@ -5,7 +5,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 const fs = require("fs");
 
-// require("./routes/apiRoutes")(app);
+require("./public/routes/apiRoutes")(app);
 require("./public/routes/htmlRoutes")(app);
 
 
