@@ -13,9 +13,10 @@ For users that need to keep track of a lot of information, it's easy to forget o
 * [Questions](#Questions)
 
 ## Installation
-
+This appication uses the node.js express package, make sure to run the command "npm install" in the terminal to download express from the package.json file. Once it is installed you can run the app with the command "node server" or "nodemon server" (recomended method). Using nodemon is prefered as it will restart the server automaticly when new data is added or removed from the server.
 
 ## Usage
+Once the application is running, click the "Get Started" button to navigate to the notes page. You can type in a note title and the inner text of what you want the note to be, then save it to the sidebar using the save icon in the top right of the  green bar. To delete any notes you have saved simply click the red delete icon on the right of each saved note.
 
 ## License
 MIT License - Copyright 2021 Patrick-Kaczmar
